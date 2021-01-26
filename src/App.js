@@ -1,4 +1,4 @@
 import React from 'react';
-import { Time } from './Time';
+import { CountDown } from './CountDown.js';
 
-export const App = () => <Time />;
+export const App = () => <CountDown />;

@@ -1,10 +1,12 @@
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const srcPath = path.resolve(__dirname, 'src');
+const publicPath = path.resolve(__dirname, 'public');
 const buildPath = path.resolve(__dirname, 'dist');
 const isProduction = process.env.NODE_ENV === 'production';
 const optimization = isProduction
@@ -42,11 +44,10 @@ module.exports = {
     rules: [
       { test: /\.(m)?js$/, use: ['babel-loader'], exclude: /node_modules/ },
       {
-        test: /\.(s)?css$/,
+        test: /\.css$/,
         use: [
           isProduction ? MiniCssExtractPlugin.loader : 'style-loader',
           'css-loader',
-          'sass-loader',
         ],
       },
       {
@@ -69,6 +70,11 @@ module.exports = {
   plugins: [
     // Removes/cleans build folders and unused assets when rebuilding
     new CleanWebpackPlugin(),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: `${publicPath}/favicon.ico`, to: '.' },
+      ],
+    }),
     new HtmlWebpackPlugin({
       template: `${srcPath}/index.html`,
       filename: 'index.html',
