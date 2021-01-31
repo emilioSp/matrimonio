@@ -1,6 +1,7 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
 import { CountDown } from './CountDown.js';
+import { labels } from './l10n.js';
 
 const useStyle = createUseStyles({
   container: {
@@ -32,14 +33,14 @@ export const SecondPage = () => {
     <div className={classes.container}>
       <div className={classes.kittens} />
       <div>
-        <h3>Domenica,</h3>
-        <h2>22 Agosto 2021</h2>
+        <h3>{labels.sunday},</h3>
+        <h2>{labels.date}</h2>
         <h3>Roma</h3>
         <h5>
           <CountDown />
         </h5>
       </div>
-      <button className="btn btn-primary">Conferma la tua presenza</button>
+      <button className="btn btn-primary">{labels.rsvp}</button>
     </div>
   );
 };
