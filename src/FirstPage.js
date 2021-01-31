@@ -7,10 +7,12 @@ const useStyle = createUseStyles({
     composes: 'col-sm-12',
     display: 'flex',
     flexDirection: 'column',
-    backgroundImage: `url('photo.jpeg')`,
     height: '100vh',
     backgroundPosition: 'center',
     backgroundSize: 'cover',
+  },
+  photo: {
+    marginTop: 'auto',
   },
   language: {
     composes: 'btn-group',
@@ -19,11 +21,8 @@ const useStyle = createUseStyles({
   welcome: {
     marginTop: 'auto',
     marginBottom: '14vh',
-    opacity: 0.75,
-    borderRadius: '5px',
     textAlign: 'center',
     padding: '5px',
-    backgroundColor: '#fbedda',
   },
   title: {
     fontSize: '4rem',
@@ -66,6 +65,7 @@ export const FirstPage = () => {
           Espanol
         </button>
       </div>
+      <img src="photo.jpeg" className={classes.photo} />
       <div className={classes.welcome}>
         <h1 className={classes.title}>Crina & Emilio</h1>
         {labels.title}
