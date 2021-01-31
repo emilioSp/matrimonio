@@ -9,53 +9,55 @@
 
         <title>Emilio & Crina</title>
 
-        <!--     Fonts     -->
-        <link href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lovers+Quarrel&family=Parisienne&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-
-      <link rel="preconnect" href="https://fonts.gstatic.com">
-      <link href="https://fonts.googleapis.com/css2?family=Lovers+Quarrel&family=Parisienne&display=swap" rel="stylesheet">
-
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-      <style>
-        * {
-            font-family: 'Parisienne', cursive;
-            font-size: 1.2rem;
-        }
-        body {
-            background-image: url('bg.jpeg'); height: 100vh; color:black;
-            background-position: center;
-            background-size: cover;
-        }
-        h1 {
-            font-size: 4rem;
-            font-family: 'Lovers Quarrel', cursive;
-        }
-      </style>
+        <style>
+          * {
+              font-family: 'Parisienne', cursive;
+              font-size: 1.2rem;
+          }
+          .photo {
+              background-image: url('bg.jpeg'); height: 100vh; color:black;
+              background-position: center;
+              background-size: cover;
+          }
+          h1 {
+              font-size: 4rem;
+              font-family: 'Lovers Quarrel', cursive;
+          }
+        </style>
     </head>
 
     <body>
-    <main class="container h-100 d-flex align-items-center">
-      <div>
-        <h1>Matrimonio Crina & Emilio</h1>
-        <div>
-          <span>The smallest little eatery in town with the biggest taste.</span>
-          <div class="subscribe">
-            Join the waiting list for the beta. We keep you posted.
-            <div class="row">
-              <div class="col">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-              </div>
-            </div>
+
+    <main class='container'>
+      <div class='row' style='background-color: #fbedda'>
+        <div class='col-sm-12 photo d-flex'>
+          <div class='mt-auto' style='margin-bottom: 5vh; color: white'>
+            <h1>Crina & Emilio</h1>
+            Siamo felici di celebrare il nostro matrimonio con voi. Aiutaci ad organizzarlo al meglio.
           </div>
         </div>
-        <div class="footer">
-          <div class="container">
-            Made with love
+        <div class='col-sm-12 d-flex align-items-center flex-column'
+             style="min-height: 100vh; text-align: center; background-image: url('flowers.png');
+    background-position: center;
+    background-size: cover;">
+          <div style="background-image: url(kitten.png);
+    width: 150px;
+    height: 150px;
+    background-position-x: 323px;
+    background-position-y: 210px;
+    background-size: 450px 450px; margin-top: 160px">
           </div>
+          <h2 style='margin-top: 50px'>Domenica,</h2>
+          <h2>22 Agosto 2021</h2>
+          <h2>Roma</h2>
+          <h3>3 giorni, 2 ore, 10 minuti, 4 secondi</h3>
+          <button class='btn btn-primary' onclick="javascript: window.location.href='mailto:mail@example.org'">Conferma la tua presenza</button>
         </div>
       </div>
-
     </main>
 
 </body>
