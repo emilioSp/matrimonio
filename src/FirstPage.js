@@ -11,8 +11,12 @@ const useStyle = createUseStyles({
     backgroundPosition: 'center',
     backgroundSize: 'cover',
   },
-  photo: {
+  photoContainer: {
     marginTop: 'auto',
+  },
+  photo: {
+    width: '100%',
+    height: 'auto',
   },
   language: {
     composes: 'btn-group',
@@ -65,7 +69,9 @@ export const FirstPage = () => {
           Espanol
         </button>
       </div>
-      <img src="photo.jpeg" className={classes.photo} />
+      <div className={classes.photoContainer}>
+        <img src="photo.jpeg" className={classes.photo} />
+      </div>
       <div className={classes.welcome}>
         <h1 className={classes.title}>Crina & Emilio</h1>
         {labels.title}
