@@ -71,9 +71,7 @@ module.exports = {
     // Removes/cleans build folders and unused assets when rebuilding
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin({
-      patterns: [
-        { from: `${publicPath}/favicon.ico`, to: '.' },
-      ],
+      patterns: [{ from: `${publicPath}`, to: '.' }],
     }),
     new HtmlWebpackPlugin({
       template: `${srcPath}/index.html`,
