@@ -18,7 +18,8 @@ const useStyle = createUseStyles({
   },
   welcome: {
     marginTop: 'auto',
-    marginBottom: '120px',
+    marginBottom: '14vh',
+    opacity: 0.75,
     borderRadius: '5px',
     textAlign: 'center',
     padding: '5px',
