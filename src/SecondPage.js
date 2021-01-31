@@ -7,6 +7,7 @@ const useStyle = createUseStyles({
     composes: 'col-sm-12',
     display: 'flex',
     alignItems: 'center',
+    justifyContent: 'center',
     flexDirection: 'column',
     minHeight: '100vh',
     textAlign: 'center',
@@ -21,10 +22,7 @@ const useStyle = createUseStyles({
     backgroundPositionX: '323px',
     backgroundPositionY: '210px',
     backgroundSize: '450px 450px',
-    marginTop: '160px',
-  },
-  date: {
-    marginTop: '50px',
+    marginBottom: '2vh',
   },
 });
 
@@ -33,12 +31,14 @@ export const SecondPage = () => {
   return (
     <div className={classes.container}>
       <div className={classes.kittens} />
-      <h3 className={classes.date}>Domenica,</h3>
-      <h2>22 Agosto 2021</h2>
-      <h3>Roma</h3>
-      <h5>
-        <CountDown />
-      </h5>
+      <div>
+        <h3>Domenica,</h3>
+        <h2>22 Agosto 2021</h2>
+        <h3>Roma</h3>
+        <h5>
+          <CountDown />
+        </h5>
+      </div>
       <button className="btn btn-primary">Conferma la tua presenza</button>
     </div>
   );
