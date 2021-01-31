@@ -7,7 +7,7 @@ const useStyle = createUseStyles({
     composes: 'col-sm-12',
     display: 'flex',
     flexDirection: 'column',
-    backgroundImage: `url('bg.jpeg')`,
+    backgroundImage: `url('photo.jpeg')`,
     height: '100vh',
     backgroundPosition: 'center',
     backgroundSize: 'cover',
@@ -19,9 +19,9 @@ const useStyle = createUseStyles({
   welcome: {
     marginTop: 'auto',
     marginBottom: '120px',
-    borderRadius: '50%',
+    borderRadius: '5px',
     textAlign: 'center',
-    padding: '30px',
+    padding: '5px',
     backgroundColor: '#fbedda',
   },
   title: {
