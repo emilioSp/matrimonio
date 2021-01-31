@@ -1,4 +1,25 @@
 import React from 'react';
-import { CountDown } from './CountDown.js';
+import { FirstPage } from './FirstPage.js';
+import { SecondPage } from './SecondPage.js';
+import { createUseStyles } from 'react-jss';
 
-export const App = () => <CountDown />;
+const useStyles = createUseStyles({
+  app: {
+    composes: 'container',
+    backgroundColor: '#fbedda',
+    fontFamily: `'Parisienne', cursive`,
+    fontSize: '1.2rem',
+  },
+});
+
+export const App = () => {
+  const classes = useStyles();
+  return (
+    <main className={classes.app}>
+      <div className="row">
+        <FirstPage />
+        <SecondPage />
+      </div>
+    </main>
+  );
+};
