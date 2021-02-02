@@ -1,5 +1,8 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChurch } from '@fortawesome/free-solid-svg-icons';
+import { faPizzaSlice } from '@fortawesome/free-solid-svg-icons';
 import { CountDown } from './CountDown.js';
 import { doodleUrl, labels } from './l10n.js';
 
@@ -51,10 +54,10 @@ export const SecondPage = () => {
       </a>
       <div>
         <a href="https://goo.gl/maps/KPGTtV1ncPz6P3wt5" target="_blank" rel="noreferrer" className={classes.icons}>
-          <i className="fas fa-church"></i>
+          <FontAwesomeIcon icon={faChurch} />
         </a>
         <a href="https://www.laportadelprincipe.it/" target="_blank" rel="noreferrer" className={classes.icons}>
-          <i className="fas fa-utensils"></i>
+          <FontAwesomeIcon icon={faPizzaSlice} />
         </a>
       </div>
     </div>
