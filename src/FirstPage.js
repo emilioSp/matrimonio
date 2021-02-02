@@ -19,7 +19,7 @@ const useStyle = createUseStyles({
     height: 'auto',
   },
   language: {
-    composes: 'btn-group',
+    composes: 'btn-group mt-4',
     marginTop: '10px',
   },
   welcome: {
@@ -59,14 +59,14 @@ export const FirstPage = () => {
           className={`btn ${lang === 'ro' ? 'btn-info' : 'btn-secondary'}`}
           onClick={() => changeLanguage('ro')}
         >
-          Romana
+          Română
         </button>
         <button
           type="button"
           className={`btn ${lang === 'es' ? 'btn-info' : 'btn-secondary'}`}
           onClick={() => changeLanguage('es')}
         >
-          Espanol
+          Español
         </button>
       </div>
       <div className={classes.photoContainer}>

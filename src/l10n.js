@@ -1,22 +1,22 @@
 const labelsIT = {
-  title: 'Siamo felici di celebrare il nostro matrimonio con voi. Aiutaci ad organizzarlo al meglio.',
+  title: 'Siamo felici di celebrare il nostro matrimonio con voi. Aiutateci ad organizzarlo al meglio.',
   sunday: 'Domenica',
   date: '22 agosto 2021',
   rsvp: 'Conferma la tua presenza',
 };
 
 const labelsES = {
-  title: 'Estamos felici di celebrare il nostro matrimonio con voi. Aiutaci ad organizzarlo al meglio.',
+  title: 'Estamos encantados de celebrar nuestro gran día con vosotros. Ayudadnos a organizarlo de la mejor manera.',
   sunday: 'Domingo',
-  date: '22 agosto 2021',
-  rsvp: 'Conferma la tua presenza',
+  date: '22 de agosto de 2021',
+  rsvp: 'Confirma tu presencia',
 };
 
 const labelsRO = {
-  title: 'Sunt felici di celebrare il nostro matrimonio con voi. Aiutaci ad organizzarlo al meglio.',
-  sunday: 'Cozonac',
-  date: '22 agosto 2021',
-  rsvp: 'Conferma la tua presenza',
+  title: 'Suntem fericiți să putem sărbători această zi specială împreună. Ajută-ne să o organizăm cât mai bine.',
+  sunday: 'Duminică',
+  date: '22 august 2021',
+  rsvp: 'Confirmă-ți prezența',
 };
 
 const urlSearchParams = new URLSearchParams(location.search);
