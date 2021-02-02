@@ -27,3 +27,11 @@ export const labels = ((lang) => {
   if (lang === 'ro') return labelsRO;
   return labelsIT;
 })(lang);
+
+export const doodleUrl = ((lang) => {
+  if (lang === 'es')
+    return 'https://docs.google.com/forms/d/e/1FAIpQLSdMFgUo88A_k2_xRu2PpsNQCmxQ-gzXfc0HPOENYgN2DMO_Kg/viewform?usp=sf_link';
+  if (lang === 'ro')
+    return 'https://docs.google.com/forms/d/e/1FAIpQLSdObOwqQKzvd_YMho_OxBeXnbhESHEdVHSJN2umGq4pjl8NTQ/viewform?usp=sf_link';
+  return 'https://docs.google.com/forms/d/e/1FAIpQLScbnhsw3Swei5LUwmR1B2qjgEtjqEoSNlaE8wM6a2z4et5LXA/viewform?usp=sf_link';
+})(lang);

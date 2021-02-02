@@ -1,7 +1,7 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
 import { CountDown } from './CountDown.js';
-import { labels } from './l10n.js';
+import { doodleUrl, labels } from './l10n.js';
 
 const useStyle = createUseStyles({
   container: {
@@ -25,6 +25,14 @@ const useStyle = createUseStyles({
     backgroundSize: '450px 450px',
     marginBottom: '2vh',
   },
+  rsvp: {
+    composes: 'btn btn-info btn-lg',
+    color: 'white',
+  },
+  icons: {
+    composes: 'btn btn-info m-2',
+    color: 'white',
+  },
 });
 
 export const SecondPage = () => {
@@ -36,11 +44,19 @@ export const SecondPage = () => {
         <h3>{labels.sunday},</h3>
         <h2>{labels.date}</h2>
         <h3>Roma</h3>
-        <h5>
-          <CountDown />
-        </h5>
+        <CountDown />
       </div>
-      <button className="btn btn-primary">{labels.rsvp}</button>
+      <a href={doodleUrl} target="_blank" rel="noreferrer" className={classes.rsvp}>
+        {labels.rsvp}
+      </a>
+      <div>
+        <a href="https://goo.gl/maps/KPGTtV1ncPz6P3wt5" target="_blank" rel="noreferrer" className={classes.icons}>
+          <i className="fas fa-church"></i>
+        </a>
+        <a href="https://www.laportadelprincipe.it/" target="_blank" rel="noreferrer" className={classes.icons}>
+          <i className="fas fa-utensils"></i>
+        </a>
+      </div>
     </div>
   );
 };

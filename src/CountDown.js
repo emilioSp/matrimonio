@@ -21,8 +21,12 @@ export const CountDown = () => {
 
   return (
     <>
-      {diff.months} months, {diff.days} days, {diff.hours} hours, {diff.minutes} minutes and {Math.floor(diff.seconds)}{' '}
-      seconds
+      <h3>
+        {diff.months} months, {diff.days} days,
+      </h3>
+      <h3>
+        {diff.hours} hours, {diff.minutes} minutes and {Math.floor(diff.seconds)} seconds
+      </h3>
     </>
   );
 };

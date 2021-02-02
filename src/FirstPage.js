@@ -49,21 +49,21 @@ export const FirstPage = () => {
       <div className={classes.language} role="group">
         <button
           type="button"
-          className={`btn ${lang === 'it' ? 'btn-primary' : 'btn-secondary'}`}
+          className={`btn ${lang === 'it' ? 'btn-info' : 'btn-secondary'}`}
           onClick={() => changeLanguage('it')}
         >
           Italiano
         </button>
         <button
           type="button"
-          className={`btn ${lang === 'ro' ? 'btn-primary' : 'btn-secondary'}`}
+          className={`btn ${lang === 'ro' ? 'btn-info' : 'btn-secondary'}`}
           onClick={() => changeLanguage('ro')}
         >
           Romana
         </button>
         <button
           type="button"
-          className={`btn ${lang === 'es' ? 'btn-primary' : 'btn-secondary'}`}
+          className={`btn ${lang === 'es' ? 'btn-info' : 'btn-secondary'}`}
           onClick={() => changeLanguage('es')}
         >
           Espanol
@@ -74,7 +74,7 @@ export const FirstPage = () => {
       </div>
       <div className={classes.welcome}>
         <h1 className={classes.title}>Crina & Emilio</h1>
-        {labels.title}
+        <h3>{labels.title}</h3>
       </div>
     </div>
   );
