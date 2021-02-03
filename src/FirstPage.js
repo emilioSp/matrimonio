@@ -13,13 +13,16 @@ const useStyle = createUseStyles({
   },
   photoContainer: {
     marginTop: 'auto',
+    display: 'flex',
+    justifyContent: 'center',
   },
   photo: {
     width: '100%',
     height: 'auto',
+    maxWidth: '960px',
   },
   language: {
-    composes: 'btn-group mt-4',
+    composes: 'btn-group my-4',
     marginTop: '10px',
   },
   welcome: {
