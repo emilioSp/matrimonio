@@ -33,7 +33,7 @@ export const CountDown = () => {
         {months}, {days},
       </h3>
       <h3>
-        {hours}, {minutes}, and {seconds}
+        {hours}, {minutes} {seconds}
       </h3>
     </>
   );
