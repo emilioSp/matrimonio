@@ -73,7 +73,9 @@ export const FirstPage = () => {
         </button>
       </div>
       <div className={classes.photoContainer}>
-        <img src="photo.jpeg" className={classes.photo} />
+        <div>
+          <img src="photo.jpeg" className={classes.photo} />
+        </div>
       </div>
       <div className={classes.welcome}>
         <h1 className={classes.title}>Crina & Emilio</h1>
