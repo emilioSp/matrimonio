@@ -32,9 +32,10 @@ const useStyle = createUseStyles({
   rsvp: {
     composes: 'btn btn-info btn-lg',
     color: 'white',
+    fontSize: '1.5rem',
   },
   icons: {
-    composes: 'btn btn-info m-2',
+    composes: 'btn btn-info m-2 btn-lg',
     color: 'white',
   },
 });

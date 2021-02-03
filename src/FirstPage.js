@@ -49,21 +49,21 @@ export const FirstPage = () => {
       <div className={classes.language} role="group">
         <button
           type="button"
-          className={`btn ${i18n.language === 'it' ? 'btn-info' : 'btn-secondary'}`}
+          className={`btn btn-lg ${i18n.language === 'it' ? 'btn-info' : 'btn-secondary'}`}
           onClick={() => changeLanguage('it')}
         >
           Italiano
         </button>
         <button
           type="button"
-          className={`btn ${i18n.language === 'ro' ? 'btn-info' : 'btn-secondary'}`}
+          className={`btn btn-lg ${i18n.language === 'ro' ? 'btn-info' : 'btn-secondary'}`}
           onClick={() => changeLanguage('ro')}
         >
           Română
         </button>
         <button
           type="button"
-          className={`btn ${i18n.language === 'es' ? 'btn-info' : 'btn-secondary'}`}
+          className={`btn btn-lg ${i18n.language === 'es' ? 'btn-info' : 'btn-secondary'}`}
           onClick={() => changeLanguage('es')}
         >
           Español
