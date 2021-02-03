@@ -33,6 +33,7 @@ const useStyle = createUseStyles({
     composes: 'btn btn-info btn-lg',
     color: 'white',
     fontSize: '1.5rem',
+    marginTop: '16px',
   },
   icons: {
     composes: 'btn btn-info m-2 btn-lg',
