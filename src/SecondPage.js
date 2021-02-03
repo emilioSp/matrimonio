@@ -4,7 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChurch } from '@fortawesome/free-solid-svg-icons';
 import { faPizzaSlice } from '@fortawesome/free-solid-svg-icons';
 import { CountDown } from './CountDown.js';
-import { doodleUrl, labels } from './l10n.js';
+import { doodleUrl } from './i18n.js';
+import { useTranslation } from 'react-i18next';
 
 const useStyle = createUseStyles({
   container: {
@@ -40,17 +41,18 @@ const useStyle = createUseStyles({
 
 export const SecondPage = () => {
   const classes = useStyle();
+  const { t } = useTranslation();
   return (
     <div className={classes.container}>
       <div className={classes.kittens} />
       <div>
-        <h3>{labels.sunday},</h3>
-        <h2>{labels.date}</h2>
+        <h3>{t('sunday')},</h3>
+        <h2>{t('date')}</h2>
         <h3>Roma</h3>
         <CountDown />
       </div>
       <a href={doodleUrl} target="_blank" rel="noreferrer" className={classes.rsvp}>
-        {labels.rsvp}
+        {t('rsvp')}
       </a>
       <div>
         <a href="https://goo.gl/maps/KPGTtV1ncPz6P3wt5" target="_blank" rel="noreferrer" className={classes.icons}>

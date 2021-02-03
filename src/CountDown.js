@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import DateTime from 'luxon/src/datetime.js';
+import { useTranslation } from 'react-i18next';
 
 const weddingDate = DateTime.fromISO('2021-08-22');
 export const CountDown = () => {
   const [diff, setDiff] = useState(null);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const countdown = () => {
@@ -19,13 +21,19 @@ export const CountDown = () => {
 
   if (diff === null) return null;
 
+  const months = t('monthWithCount', { count: diff.months });
+  const days = t('dayWithCount', { count: diff.days });
+  const hours = t('hourWithCount', { count: diff.hours });
+  const minutes = t('minuteWithCount', { count: diff.minutes });
+  const seconds = t('secondWithCount', { count: Math.floor(diff.seconds) });
+
   return (
     <>
       <h3>
-        {diff.months} months, {diff.days} days,
+        {months}, {days},
       </h3>
       <h3>
-        {diff.hours} hours, {diff.minutes} minutes and {Math.floor(diff.seconds)} seconds
+        {hours}, {minutes}, and {seconds}
       </h3>
     </>
   );

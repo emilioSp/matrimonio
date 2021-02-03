@@ -1,6 +1,6 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
-import { labels } from './l10n.js';
+import { useTranslation } from 'react-i18next';
 
 const useStyle = createUseStyles({
   container: {
@@ -42,28 +42,28 @@ const changeLanguage = (lang) => {
 
 export const FirstPage = () => {
   const classes = useStyle();
-  const urlSearchParams = new URLSearchParams(location.search);
-  const lang = urlSearchParams.get('lang') ?? 'it';
+  const { t, i18n } = useTranslation();
+
   return (
     <div className={classes.container}>
       <div className={classes.language} role="group">
         <button
           type="button"
-          className={`btn ${lang === 'it' ? 'btn-info' : 'btn-secondary'}`}
+          className={`btn ${i18n.language === 'it' ? 'btn-info' : 'btn-secondary'}`}
           onClick={() => changeLanguage('it')}
         >
           Italiano
         </button>
         <button
           type="button"
-          className={`btn ${lang === 'ro' ? 'btn-info' : 'btn-secondary'}`}
+          className={`btn ${i18n.language === 'ro' ? 'btn-info' : 'btn-secondary'}`}
           onClick={() => changeLanguage('ro')}
         >
           Română
         </button>
         <button
           type="button"
-          className={`btn ${lang === 'es' ? 'btn-info' : 'btn-secondary'}`}
+          className={`btn ${i18n.language === 'es' ? 'btn-info' : 'btn-secondary'}`}
           onClick={() => changeLanguage('es')}
         >
           Español
@@ -74,7 +74,7 @@ export const FirstPage = () => {
       </div>
       <div className={classes.welcome}>
         <h1 className={classes.title}>Crina & Emilio</h1>
-        <h3>{labels.title}</h3>
+        <h3>{t('title')}</h3>
       </div>
     </div>
   );
