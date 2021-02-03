@@ -21,11 +21,11 @@ export const CountDown = () => {
 
   if (diff === null) return null;
 
-  const months = t('monthWithCount', { count: diff.months });
-  const days = t('dayWithCount', { count: diff.days });
-  const hours = t('hourWithCount', { count: diff.hours });
-  const minutes = t('minuteWithCount', { count: diff.minutes });
-  const seconds = t('secondWithCount', { count: Math.floor(diff.seconds) });
+  const months = t('month', { count: diff.months });
+  const days = t('day', { count: diff.days });
+  const hours = t('hour', { count: diff.hours });
+  const minutes = t('minute', { count: diff.minutes });
+  const seconds = t('second', { count: Math.floor(diff.seconds) });
 
   return (
     <>
