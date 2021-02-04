@@ -20,6 +20,8 @@ const useStyle = createUseStyles({
     width: '100%',
     height: 'auto',
     maxWidth: '960px',
+    borderRadius: '1rem',
+    boxShadow: '0 0 1rem rgba(0, 0, 0, 0.2)',
   },
   language: {
     composes: 'btn-group my-4',
