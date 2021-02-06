@@ -7,8 +7,7 @@ const useStyles = createUseStyles({
   app: {
     composes: 'container',
     backgroundColor: '#fbedda',
-    fontFamily: `'Parisienne', cursive`,
-    fontSize: '1.2rem',
+    fontFamily: `'Dancing Script', cursive`,
   },
 });
 
