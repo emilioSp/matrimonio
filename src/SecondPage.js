@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChurch } from '@fortawesome/free-solid-svg-icons';
 import { faPizzaSlice } from '@fortawesome/free-solid-svg-icons';
 import { CountDown } from './CountDown.js';
-import { doodleUrl } from './i18n.js';
 import { useTranslation } from 'react-i18next';
 
 const useStyle = createUseStyles({
@@ -43,7 +42,16 @@ const useStyle = createUseStyles({
 
 export const SecondPage = () => {
   const classes = useStyle();
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  const doodleUrl = (() => {
+    if (i18n.language === 'es')
+      return 'https://docs.google.com/forms/d/e/1FAIpQLSdMFgUo88A_k2_xRu2PpsNQCmxQ-gzXfc0HPOENYgN2DMO_Kg/viewform?usp=sf_link';
+    if (i18n.language === 'ro')
+      return 'https://docs.google.com/forms/d/e/1FAIpQLSdObOwqQKzvd_YMho_OxBeXnbhESHEdVHSJN2umGq4pjl8NTQ/viewform?usp=sf_link';
+    return 'https://docs.google.com/forms/d/e/1FAIpQLScbnhsw3Swei5LUwmR1B2qjgEtjqEoSNlaE8wM6a2z4et5LXA/viewform?usp=sf_link';
+  })();
+
   return (
     <div className={classes.container}>
       <div className={classes.kittens} />

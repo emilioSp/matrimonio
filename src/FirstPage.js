@@ -39,15 +39,14 @@ const useStyle = createUseStyles({
   },
 });
 
-const changeLanguage = (lang) => {
-  const urlSearchParams = new URLSearchParams(location.search);
-  urlSearchParams.set('lang', lang);
-  location.search = urlSearchParams.toString();
-};
-
 export const FirstPage = () => {
   const classes = useStyle();
   const { t, i18n } = useTranslation();
+
+  const changeLanguage = async (lang) => {
+    await i18n.changeLanguage(lang);
+    history.replaceState(null, null, `?lang=${lang}`);
+  };
 
   return (
     <div className={classes.container}>
