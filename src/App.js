@@ -2,6 +2,7 @@ import React from 'react';
 import { FirstPage } from './FirstPage.js';
 import { SecondPage } from './SecondPage.js';
 import { createUseStyles } from 'react-jss';
+import { ThirdPage } from './ThirdPage.js';
 
 const useStyles = createUseStyles({
   app: {
@@ -18,6 +19,7 @@ export const App = () => {
       <div className="row">
         <FirstPage />
         <SecondPage />
+        <ThirdPage />
       </div>
     </main>
   );

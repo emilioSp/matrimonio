@@ -20,6 +20,7 @@ const resources = {
       minute_plural: '{{count}} minuti',
       second: 'e {{count}} secondo',
       second_plural: 'e {{count}} secondi',
+      gift: 'Qualora vogliate, è gradito un pensiero qui',
     },
   },
   es: {
@@ -39,6 +40,7 @@ const resources = {
       minute_plural: '{{count}} minutos',
       second: 'y {{count}} segundo',
       second_plural: 'y {{count}} segundos',
+      gift: 'Qualora vogliate, è gradito un pensiero qui',
     },
   },
   ro: {
@@ -62,6 +64,7 @@ const resources = {
       second: 'și {{count}} secundă',
       second_1: 'și {{count}} secunde',
       second_2: 'și {{count}} secunde',
+      gift: 'Qualora vogliate, è gradito un pensiero qui',
     },
   },
 };
