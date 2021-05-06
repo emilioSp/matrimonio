@@ -4,14 +4,14 @@ import { useTranslation } from 'react-i18next';
 
 const useStyle = createUseStyles({
   container: {
-    composes: 'col-12',
+    composes: 'col-12 text-white',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'column',
     minHeight: '100vh',
     textAlign: 'center',
-    backgroundImage: `url('x.jpg')`,
+    backgroundImage: `url('note.jpg')`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
   },
@@ -32,7 +32,9 @@ export const ThirdPage = () => {
       <div className="col-12 col-md-6 h2">{t('gift')}</div>
       <div className="col-12 col-md-6 h2 mt-4">Spatola Emilio</div>
       <div className="col-12 col-md-6 h2 mt-1">Balaban Crina Ivona</div>
-      <div className="col-12 col-md-6 h2 mt-4">IT77V0326803214052141577080</div>
+      <div className="col-12 col-md-6 h2 mt-4" style={{ wordBreak: 'break-all' }}>
+        IT77V0326803214052141577080
+      </div>
     </div>
   );
 };
