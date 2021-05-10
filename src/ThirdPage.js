@@ -29,11 +29,13 @@ export const ThirdPage = () => {
 
   return (
     <div className={classes.container}>
-      <div className="col-12 col-md-6 h2">{t('gift')}</div>
-      <div className="col-12 col-md-6 h2 mt-4">Spatola Emilio</div>
-      <div className="col-12 col-md-6 h2 mt-1">Balaban Crina Ivona</div>
-      <div className="col-12 col-md-6 h2 mt-4" style={{ wordBreak: 'break-all' }}>
-        IT77V0326803214052141577080
+      <div className="col-md-7 m-auto">
+        <div className="h2">{t('gift')}</div>
+        <div className="h2 mt-4">Spatola Emilio</div>
+        <div className="h2 mt-1">Balaban Crina Ivona</div>
+        <div className="h2 mt-4" style={{ wordBreak: 'break-all' }}>
+          IT77V0326803214052141577080
+        </div>
       </div>
     </div>
   );
