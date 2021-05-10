@@ -74,7 +74,7 @@ export const SecondPage = () => {
         <a href="https://goo.gl/maps/KPGTtV1ncPz6P3wt5" target="_blank" rel="noreferrer" className={classes.icons}>
           <FontAwesomeIcon icon={faChurch} className="mr-2" />
           <FontAwesomeIcon icon={faCross} style={{ marginRight: '7px' }} />
-          <span className="ml-4 mr-2">17:00</span>
+          <span className="ml-4 mr-2">16:30</span>
           <FontAwesomeIcon icon={faClock} />
           <FontAwesomeIcon icon={faExternalLinkSquareAlt} className="ml-4" />
         </a>

@@ -25,7 +25,7 @@ export const ThirdPage = () => {
   const classes = useStyle();
   const { t, i18n } = useTranslation();
 
-  if (i18n.language === 'ro') return null;
+  if (i18n.language === 'ro' || i18n.language === 'es') return null;
 
   return (
     <div className={classes.container}>
